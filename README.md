@@ -29,4 +29,18 @@ Ciphertext is:
 Decrypted text is:
 The quick brown fox jumps over the lazy dog
 ```
+4. aria example
 
+* build
+```bash
+gcc aria.c -o aria -L/usr/local/lib -lssl -lcrypto
+```
+* output
+```
+Ciphertext is:
+0000 - cd 09 81 3e 8c 2d 3a f5-9f fa b7 54 62 3b be fe   ...>.-:....Tb;..
+0010 - c0 1e 17 0f a3 82 94 f7-ee 31 a5 6d ab d1 55 ec   .........1.m..U.
+0020 - b3 03 3c a2 3c 29 7e 92-4a e2 4d 0c c0 2c de 46   ..<.<)~.J.M..,.F
+Decrypted text is:
+The quick brown fox jumps over the lazy dog
+```
